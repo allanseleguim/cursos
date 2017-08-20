@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- data-placement: right, para alinhar o tooltip, atributo de qualquer TAg html -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>
+function listaArrays(n) 
+{
+
+	switch(n)
+	{
+
+	case 1:
+
+	//Gravação e exibição comum 
+	var cars = ["Saab", "Volvo", "BMW"];
+	document.getElementById("demo").innerHTML = cars;
+	break;
+	
+
+
+	case 2:
+	//Exibição por indice do Array //
+	var cars = ["Saab", "Volvo", "BMW"];
+	document.getElementById("demo").innerHTML = cars[0];
+	break;
+
+	case 3:
+	//Exibição de tipos de dados diferente por indice //
+	var person = ["John", "Doe", 46];
+	document.getElementById("demo").innerHTML = person[0];
+	break;
+
+	case 4:
+	var person = {firstName:"John", lastName:"Doe", age:46};
+	document.getElementById("demo").innerHTML = person["firstName"];
+	break;
+
+	case 5:
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits.length;
+	break;
+
+	case 6:
+	var fruits, text, fLen, i;
+
+	fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fLen = fruits.length;
+	text = "<ul>";
+	for (i = 0; i < fLen; i++) {
+	text += "<li>" + fruits[i] + "</li>";
+	}
+	text += "</ul>";
+	document.getElementById("demo").innerHTML = text;
+	break;
+
+	case 7:
+
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits;
+
+	 
+	fruits.push("Lemon");
+	document.getElementById("demo").innerHTML = fruits;
+	
+
+	break;
+
+	case 8:
+	var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46; 
+document.getElementById("demo").innerHTML =
+person[0] + " " + person.length;
+	break;
+
+	case 9:
+	// Posição do item //
+	var cars = ["Saab", "Volvo", "BMW"];
+	posicao = cars.indexOf("Saab");
+	document.getElementById("demo").innerHTML = posicao;
+	break;
+
+	case 10:
+	// Listar array em ordem alfabética //
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fruits.sort();
+	document.getElementById("demo").innerHTML = fruits;
+	break;
+
+	case 11:
+	// Listagem array reverso //
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("demo").innerHTML = fruits;
+
+
+		fruits.sort();
+		fruits.reverse();
+		document.getElementById("demo").innerHTML = fruits;
+    break;
+
+    case 12:
+    // SORT numérico MAIOR até o MENOR //
+		var points = [40, 100, 1, 5, 25, 10];
+		document.getElementById("demo").innerHTML = points;
+
+
+		points.sort(function(a, b){return b - a});
+		document.getElementById("demo").innerHTML = points;
+		break;
+
+	case 13:
+	// SORT aleatório //
+	var points = [40, 100, 1, 5, 25, 10];
+	document.getElementById("demo").innerHTML = points;    
+
+
+	points.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("demo").innerHTML = points;
+	break;
+
+	case 14:
+	// achando menor valor //
+	var points = [40, 100, 1, 5, 25, 10];
+	points.sort(function(a, b){return a-b});
+	document.getElementById("demo").innerHTML = points[0];
+	break;
+
+	
+
+
+
+
+}
+}
+
+</script>
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+    	<h1> Título principal </h1>
+    		<p> Subtítulo do artigo </p>
+    			<br/>
+
+    				<a href="#" onclick="listaArrays(1);">
+    					Listagem simples Array 
+    				</a>
+
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(2);">
+    				Acessando um elemento de um Array 
+    				</a>
+
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(3);">
+    				Acessando Array com número
+    				</a>
+
+    				<a href="#" onclick="listaArrays(4);">
+    				Acessando Array com objetos
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(5);">
+    				Verificando tamanho do Array
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(6);">
+    				Loop nos elementos do Array
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(7);">
+    				Inserindo no Array com PUSH
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(8);">
+    				Array associativo
+    				</a>
+    				
+    				<br/>
+
+    					<a href="#" onclick="listaArrays(9);">
+    				Posição de um texto do Array
+    				</a>
+    				
+    				<br/>
+					
+					<h1> Listagem e SORT </h1>
+
+    				<a href="#" onclick="listaArrays(10);">
+    				Listar Array em ordem alfabética
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(11);">
+    				Listar Array reverso
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(12);">
+    				Listar Array SORT numérico do maior ao menor
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(13);">
+    				Listar Array aleatória
+    				</a>
+    				
+    				<br/>
+
+    				<a href="#" onclick="listaArrays(14);">
+    				Listar Array achando menor valor
+    				</a>
+    				
+    				<br/>
+    				
+    				<br/>
+
+    				
+
+    				<hr/>
+
+    				<p id="demo">Texto output</p>
+    </div>
+
+
+
+</body>
+</html>

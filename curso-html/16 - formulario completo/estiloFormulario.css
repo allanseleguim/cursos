@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+label  /* Classe que representa o rótulo / LINHAS do formulário */
+{
+display:block; /* Exibição POR linha <br/> */
+font-family:Tahoma;
+font-size:12px;
+color:#FFF;
+font-weight:bolder;
+text-shadow:1px 2px 4px #000;	
+}
+
+body /* Classe que representa o corpo do site */ 
+{
+background-color:#005E8A;	/* Define a cor de fundo do site */
+}
+
+h1 /* Classe que representa o título da página */
+{
+font-family:IMPACT; /* Define a letra*/
+font-size:38px; /* Define o tamanho */
+color:#AAD5FF; /* Define a COR */
+/*textshadow: Sombra do texto, DISTANCIA HORIZONTAL, DISTANCIA VERTICAL, DESFOQUE*/	
+text-shadow:2px 3px 2px #000;
+text-transform:uppercase;
+-webkit-transition:.3s linear all; /*Configura a animação*/
+}
+
+
+
+p /* Classe que representa o parágrafo */
+{
+font-family:Segoe UI; /* Define a letra*/
+font-size:12px; /* Define o tamanho */
+color:#ffffff; /* Define a COR */
+/*textshadow: Sombra do texto, DISTANCIA HORIZONTAL, DISTANCIA VERTICAL, DESFOQUE*/
+-webkit-transition:.2s linear all; /*Configura a animação*/	
+}
+
+p:hover 
+{
+-webkit-transform:rotate(90deg);	
+}
+
+input, select, textarea 
+{
+-webkit-transition:.2s linear all;	
+}
+
+input:hover 
+{
+-webkit-transform:translate(1.9);	
+}
+
+form  /* Classe que representa o formulário */
+{
+background:-webkit-linear-gradient(top, #666, #E0E0E0); /* Aplica um fundo de várias cores*/
+/*background-size: Tamanho do fundo, cover: COBRE tudo*/
+background-size:cover;
+/*background-attachment: Deslocamento do fundo, fixed: Parado*/
+background-attachment:fixed;
+/*background-position: Posição do fundo, center: centro */
+background-position:center;
+/*background-repeat: Repetição do fundo, no-repeat: Sem repetição */
+background-repeat:no-repeat;
+width:70%; /* Largura */
+/*padding: Espaçamento INTERNO e EXTERNO */
+padding-bottom:6px;
+padding-left:6px;
+padding-right:6px;
+padding-top:6px;
+
+}
+
+.caixaTexto 
+{
+background-color:#69C;
+/*border-style: Define o estilo da borda, solid: Linha única*/
+border-style:solid;
+/*border-width: Espessura da borda, thin: Pequeno*/	
+border-width:thin;
+border-color:#005E8A;
+}
+
+
+
+
+
+
+
+
+
+
+

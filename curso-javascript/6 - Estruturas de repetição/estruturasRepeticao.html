@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>While</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class="container-fluid">
+    
+	<div class="row text-center">
+		
+	<h1> Exemplo de estrutura de repetição  </h1>
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-3" >
+
+		</div>
+
+			<div class="col-md-5 align-center" >
+				<ul class="list-group">
+				
+					<li class="list-group-item">
+						 <p id="demo"></p>
+					</li>
+					
+				</ul>
+			</div>
+			
+			<div class="col-md-3" >
+
+			</div>
+
+			
+			
+   
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+for (;cars[i];) {
+    text += cars[i] + "<br>";
+    i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+     
+
+    </div>
+
+
+
+</body>
+</html>

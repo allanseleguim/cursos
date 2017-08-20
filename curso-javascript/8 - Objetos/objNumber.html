@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- data-placement: right, para alinhar o tooltip, atributo de qualquer TAg html -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>
+function testeObjNumber()
+{
+
+	//var n = 120;
+	var n = new Number("120.3554542");
+	window.alert(typeof(n));
+	window.alert(Number.MAX_VALUE);
+	window.alert(Number.MIN_VALUE);
+	window.alert(Number.NEGATIVE_INFINITY);
+	window.alert(Number.NaN);
+	window.alert(Number.POSITIVE_INFINITY);
+	//window.alert(n.toFixed(2)); //acerta casa decimal
+	//window.alert(n.toPrecision(3)); 
+	window.alert(n.toExponential(2)); //Conv p/ notação cientf 
+
+	//Retorna o número com a qto de dig definida 
+	// Se o num for 120, e por 2, fica 1,0x10^2
+}
+
+</script>
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+    	<h1> Exemplos </h1>
+    		<p> Subtítulo </p>
+    			<br/>
+    				<a href="#" onclick="testeObjNumber();">testeObjNumber 
+    				</a>
+    	</h1>
+    </div>
+
+
+
+</body>
+</html>

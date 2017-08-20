@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- data-placement: right, para alinhar o tooltip, atributo de qualquer TAg html -->
+  <title> With </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- 
+  Estruturas de controle de exceção 
+TRY, tenta executar a estrutura
+CATACH, caso contrário, caso de erro
+FINALLY: executa COM ou SEM ERRO, esse trecho 
+THROW: Em caso de erro especifico 
+WITH: cria um escopo para um trecho de código
+ele permite agregar um trecho, para que o mesmo
+seja contaneado em uma estrutura. 
+
+
+
+
+
+  -->
+  <script>
+  function verCarros()
+{
+
+  var Carro = {
+    marca : "Nissan",
+    modelo : "350Z",
+    potencia :
+      {
+      cavalos : "350",
+      velocidade : "320km/h"
+      }
+              };
+
+
+  with (Carro.potencia)
+    {
+    window.alert(cavalos);
+    window.alert(velocidade);
+    }
+
+
+}
+
+  </script>
+
+<!-- EvalError: Erro de valores usando eval
+RangeError: Número extrapola o limite
+ReferenceError: Referência a valor do erro
+SintaxeError: Erro de sintaxe
+TypeError: Erro de tipo, uso de operando diferente do esperado
+URIError: Erro usando funções
+-->
+<!-- ternario = turno, IF --> 
+</head>
+<body>
+
+		<div class="row text-center">
+
+			<h1> With </h1>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-3" >
+
+			</div>
+
+			<div class="col-md-5 align-center" >
+				<ul class="list-group">
+
+					<li class="list-group-item">
+						<h1>
+							<a href="#" onclick="verCarros();">Detalhes do objeto Carro 
+							</a>
+						</h1>
+
+			</div>
+
+		<div class="col-md-3" >
+
+		</div>
+      
+  
+
+
+
+</body>
+</html>

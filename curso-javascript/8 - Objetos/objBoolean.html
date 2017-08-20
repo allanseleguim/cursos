@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- data-placement: right, para alinhar o tooltip, atributo de qualquer TAg html -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- 
+  Estruturas de controle de exceção 
+TRY, tenta executar a estrutura
+CATACH, caso contrário, caso de erro
+FINALLY: executa COM ou SEM ERRO, esse trecho 
+THROW: Em caso de erro especifico 
+WITH: cria um escopo para um trecho de código
+ele permite agregar um trecho, para que o mesmo
+seja contaneado em uma estrutura. 
+
+Zero, null, nan, false e a string vazia
+são inerentemente false; todo o
+resto é true 
+
+
+
+  -->
+<script>
+function testeObjBoolean()
+{
+	//var b = true;
+	var b = new Boolean(true);
+	window.alert(b);
+	window.alert(typeof(b));
+	window.alert(b instanceof Boolean);
+
+
+}
+
+</script>
+
+<!-- EvalError: Erro de valores usando eval
+RangeError: Número extrapola o limite
+ReferenceError: Referência a valor do erro
+SintaxeError: Erro de sintaxe
+TypeError: Erro de tipo, uso de operando diferente do esperado
+URIError: Erro usando funções
+-->
+<!-- ternario = turno, IF --> 
+</head>
+<body>
+      
+    <h1>
+    <a href="#" onclick="testeObjBoolean();">testeObjBoolean 
+    </a>
+    </h1>
+
+
+
+</body>
+</html>

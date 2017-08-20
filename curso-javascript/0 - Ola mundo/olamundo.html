@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <!-- importação das bibliotecas --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+	<!-- declarando função -->
+	<!-- uso da janela de alerta -->
+    function olaMundo(){
+        window.alert("Olá mundo!");
+    }
+	
+	<!-- criando variável que adquire a largura da janela -->
+	<!-- exibindo a informação gravada na variável --> 
+    function larguraJanela()
+    {
+        var largura = window.innerWidth;   
+        window.alert("A largura da janela é " + largura); 
+    }
+	
+	<!-- criando variável que define o novo título  -->
+	<!-- definindo o novo títul oda janela --> 
+	
+    function alteraTitulo()
+    {
+        var titulo = "Novo Título da Janela";   
+        document.title = (titulo); 
+    }
+    
+</script>
+
+</head>
+<body>
+<div class="container-fluid">
+
+	<div class="row text-center">
+		
+	<h1> Olá mundo em JS com botões, evento e função </h1>
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-3" >
+
+		</div>
+
+			<div class="col-md-5 align-center" >
+				<ul class="list-group">
+				
+					<li class="list-group-item">
+						<button class="btn btn-default" onclick="olaMundo();">Olá mundo </button>
+					</li>
+					<li class="list-group-item">
+						<button class="btn btn-default" onclick="larguraJanela();">Largura </button>
+					</li>
+					<li class="list-group-item">
+						<button class="btn btn-default" onclick="alteraTitulo();">Altera titulo </button>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" >
+
+			</div>
+
+</div>
+
+
+    
+
+    
+ 
+    
+     
+  
+
+
+
+</body>
+</html>

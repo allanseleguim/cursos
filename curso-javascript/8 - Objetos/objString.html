@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- data-placement: right, para alinhar o tooltip, atributo de qualquer TAg html -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>
+function testeObjString()
+{
+
+	var s = new String("Meu String");
+	var regularExp = new RegExp("g");
+
+	window.alert(typeof(s));
+	window.alert(s.length); //Retorna o tamanho 
+	window.alert(s.indexOf("Meu")); // Retorna o indice da pos. da primeira occ.
+	window.alert(s.lastIndexOf("Meu")); // Retorna o indice da ultima occ. se a palavra MAS aparece 10 vezes, ira aparecer a décima vez  especificada no texto
+	window.alert(s.lastIndexOf("Meu", 3)); //Com parametro de pos de inico da busca 
+	window.alert(s.search("Meu")); // Procura texto
+	window.alert(s.slice(4, 10)); // Fatia caracter final e inicial, mostra o fatiado
+	window.alert(s.substr(4, 6)); // Define carater inicial + número de proximos caracteres que irá exibir
+	window.alert(s.replace("Meu", "Seu")); //Substitui
+	window.alert(s.toUpperCase()); //Converte em maiúsculo
+	window.alert(s.toLowerCase()); //converte em minúsculo
+	window.alert(s.concat("Pois: ", s)); //Concatena
+	window.alert(s.charAt(0)); //Retorna M, o caracter 0, nesse ex 
+	window.alert(s.charCodeAt(0)); //Retorna o codigo unicode do carater
+	window.alert(s.split("")); //Quebra a string em ARRAY, usando espaço ou , ou | como separador 
+	window.alert(s.match(regularExp)); //busca exp reg dentro da String
+
+
+
+
+
+}
+
+</script>
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+    	<h1> Exemplos </h1>
+    		<p> Subtítulo </p>
+    			<br/>
+    				<a href="#" onclick="testeObjString();">testeObjString 
+    				</a>
+    	</h1>
+    </div>
+
+
+
+</body>
+</html>

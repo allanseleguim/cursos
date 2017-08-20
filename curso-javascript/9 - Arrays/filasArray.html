@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>
+function metodoPush()
+
+
+{
+
+	//push adiciona elementos no final da fila
+	//shift: remove da fila o primeiro elemento
+	//pop: remove o ultimo elemento da fila
+	//unshift: adiciona um elemento no inicio da fila
+	var pessoas = ["Ricardo", "Sandra", "Jéssica", "Wagner", "Valquiria"];
+	window.alert(pessoas.push("Alexandra"));
+	window.alert(pessoas);
+
+}
+
+function metodoShift()
+
+{
+
+	var pessoas = ["Ricardo", "Sandra", "Jéssica", "Wagner", "Valquiria"];
+	window.alert(pessoas.shift());
+	window.alert(pessoas);
+
+}
+
+function metodoPop()
+
+{
+
+	var pessoas = ["Ricardo", "Sandra", "Jéssica", "Wagner", "Valquiria"];
+	window.alert(pessoas.pop());
+	window.alert(pessoas);
+
+}
+
+function MetodoUnshift()
+
+{
+
+	var pessoas = ["Ricardo", "Sandra", "Jéssica", "Wagner", "Valquiria"];
+	window.alert(pessoas.unshift("Xanaina"));
+	window.alert(pessoas);
+
+}
+
+
+
+</script>
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+    	<h1> Título principal </h1>
+    		<p> Subtítulo do artigo </p>
+    			<br/>
+
+    				<a href="#" onclick="metodoPush();">
+    					Listagem método PUSH
+    				</a>
+    				<br/>
+
+    				<a href="#" onclick="metodoShift();">
+    					Listagem método SHIFT
+    				</a>
+    				<br/>
+
+    				<a href="#" onclick="metodoPop();">
+    					Listagem método POP
+    				</a>
+    				<br/>
+
+    				<a href="#" onclick="MetodoUnshift();">
+    					Listagem método UNSHIFT
+    				</a>
+    				<br/>
+
+
+    				<hr/>
+
+    				<p id="demo">Texto output</p>
+    </div>
+
+
+</body>
+</html>

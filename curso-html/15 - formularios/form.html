@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+body 
+	{
+	background-color:#000;		
+	}
+
+h1 
+	{
+	font-family:Trebuchet MS;
+	font-size:36px;
+	color:#FFF;		
+	}
+
+p, label, a:link, a:visited, a:hover, a:active
+	{
+	font-family:Verdana;
+	color:#FFF;
+	font-size:16px;	
+	display:block;
+	padding:8px;
+	}
+	
+.caixaTexto 
+	{
+	background-color:#979791;
+	font-family:Verdana;
+	font-size:14px;
+	color:#FFF;
+	border-style:none;
+	padding:6px;
+	width:180px;
+	height:25px;
+	}
+	
+	textarea 
+	{
+	background-color:#979791;
+	font-family:Verdana;
+	font-size:14px;
+	color:#FFF;
+	border-style:none;
+	padding:6px;
+	width:520px;
+	height:320px;
+	}
+	
+	.botaoEnviar 
+	{
+	background-color:#F60;
+	font-family:Verdana;
+	font-size:14px;
+	color:#FFF;
+	border-style:none;
+	padding:6px;
+	width:200px;
+	height:35px;
+	}
+	
+	
+	
+
+</style>
+
+
+	<title>Aula Form</title>
+		<meta charset="utf-8" />
+</head>
+<form name="frmTeste">
+
+<fieldset>
+	<label> 
+		Nome:
+	</label>
+	
+	<label>
+			<input type="text" required="required" autocomplete="autocomplete" placeholder="João da Silva" class="caixaTexto" /> 
+	</label>
+
+	<label> Curso: </label>
+	
+	<label>
+	<input name="cursos" list="lista-cursos" class="caixaTexto" /> 
+
+	<datalist id="lista-cursos">
+		<option value="HTML 5"> 
+		<option value="CSS 3"> 
+		<option value="PHP 7"> 
+	</datalist>
+	
+	</label>
+	
+	<label>
+	E-mail
+	</label>
+	
+	
+	<label>  
+		<input type="email" required="required" autocomplete="autocomplete" placeholder="joao@gmail.com" class="caixaTexto" /> 
+	</label>
+	
+	<label> 
+		Telefone: 
+	</label>
+	
+	<label>
+		<input type="tel" required="required" autocomplete="autocomplete" placeholder="15 9999-99999" class="caixaTexto" /> 
+	</label>
+	
+	<label> 
+		Mensagem:
+	</label>
+	
+	<label>
+		<textarea>Digite sua mensagem aqui </textarea> 
+	</label>
+	
+	<label> 
+		<input type="submit" value="Enviar dados" class="botaoEnviar" />
+	</label>
+</fieldset>
+
+</form>
+</html>

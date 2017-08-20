@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Treinament em Bootstrap">
+    <meta name="author" content="Allan Seleguim">
+
+    <title>Primeira aula</title>
+
+    <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        background-color: #ccc;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+        .container {
+
+        background-color: #fff;
+        }
+
+        .table-striped > tbody > tr 
+        {
+
+        background-color:#ccc;
+        }
+
+        .table-hover > tbody > tr:hover 
+        {
+        background-color:#333;
+        color:#fff;
+
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- table-striped: Deixa a tabela, modo zebra de cor -->
+
+
+<!-- table-condensed Remove os paddings da table-->
+
+<!-- div table-responsive, deixa a tabela responsiva -->
+
+<!-- table-bordered permite adicionar bordas as tabelas -->
+<div class="container">
+    <div class="col-md-6 col-md-offset-3">
+    
+    <div class="table-responsive">
+
+ <table class="table table-striped table-hover">
+    <tr class="danger">
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Age</th>
+    </tr>
+
+    <tr class="warning">
+        <td>Jill</td>
+        <td>Smith</td> 
+        <td>50</td>
+    </tr>
+
+    <tr class="success">
+        <td>Eve</td>
+        <td>Jackson</td> 
+        <td>94</td>
+    </tr>
+
+    <tr class="info">
+        <td>Eve</td>
+        <td>Jackson</td> 
+        <td>94</td>
+    </tr>
+
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td> 
+        <td>94</td>
+    </tr>
+</table>
+
+    </div>
+
+</div>
+</div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

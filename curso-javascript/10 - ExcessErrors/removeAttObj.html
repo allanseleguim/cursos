@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- data-placement: right, para alinhar o tooltip, atributo de qualquer TAg html -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+  function calc(){
+
+   Pessoa = {
+    nome : "Fulano"
+   }
+   window.alert(Pessoa.nome);
+   delete Pessoa.nome;
+   window.alert(Pessoa.nome);
+  } 
+
+  function verPro(){
+    Pessoa = {
+      nome : "Fulano"
+    }
+    window.alert("nome" in Pessoa);
+    window.alert("telefone" in Pessoa);
+  }
+
+  function verificaNumero() {
+    var idade = new Number(31);
+    window.alert(idade instanceof Number);
+  }
+
+  function este() {
+    window.alert(this.document.title);
+  }
+</script>
+<!-- ternario = turno, IF --> 
+</head>
+<body>
+    <div class="container-fluid">
+  
+        <button class="btn btn-warning" onclick="calc();">Extrair elemento de array, struct</button>
+
+
+         <button class="btn btn-warning" onclick="verPro();">Verificar propriedade dentro do obj</button>
+           
+
+        <button class="btn btn-warning" onclick="verificaNumero();">Verificar se tal objeto é numérico (tipo) </button>
+
+        <button class="btn btn-warning" onclick="este();">Exemplo This</button>
+    </div>
+
+
+
+</body>
+</html>

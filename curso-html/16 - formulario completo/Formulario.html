@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML> <!-- identifica o tipo de documento --> 
+<html lang="pt-br"> <!-- INICIA O DOCUMENTO -->
+<head> <!-- cabeçalho da página --> 
+<link rel="stylesheet" type="text/css" href="estiloFormulario.css" />
+<meta charset="utf-8"/> <!-- guarda configurações do site --> 
+<title>Página de Contato</title> <!-- texto que aparece na guia do navegador --> 
+</head>
+
+<body> <!-- corpo da página --> 
+<h1>Formulário de Contato </h1> <!-- h1: Define um título --> 
+<p> * Campo obrigatório </p> <!-- p: Define um parágrafo --> 
+<form> <!-- inicia o formulário --> 
+<label> 
+Nome: <input class="caixaTexto" type="text" maxlength="80" placeholder="Allan Seleguim" required="required"/> 
+</label> <!-- define um rótulo --> 
+
+<label> 
+E-mail: <input class="caixaTexto" type="email" maxlength="80" placeholder="usuario@provedor.com.br" required="required"/> 
+</label> <!-- define um rótulo --> 
+
+<label> 
+Telefone: DDD(<input class="caixaTexto" type="number" maxlength="2" placeholder="47" required="required" min="0" max="99"/>) -  <input class="caixaTexto" type="tel" maxlength="10" placeholder="97845-6687" required="required" pattern="/d{5}/-/d{4}"/>
+</label> <!-- define um rótulo --> 
+
+<label> 
+Nascimento: <input type="date" required="required"/> 
+</label> <!-- define um rótulo --> 
+
+<label> 
+Sexo: <input type="radio" required="required" name="sexo" value="masculino"/>Masculino
+ <input type="radio" required="required" name="sexo" value="feminino"/>Feminino  
+</label> <!-- define um rótulo --> 
+
+<label> 
+Interesses: 
+<input type="checkbox"/> Política 
+<input type="checkbox"/> Religião 
+<input type="checkbox"/> Esportes 
+<input type="checkbox"/> Notícias 
+<input type="checkbox"/> Games 
+</label> <!-- define um rótulo --> 
+
+<label> 
+Busca: <input class="caixaTexto" type="search" required="required"/> 
+</label> <!-- define um rótulo -->
+
+<label> 
+Site: <input class="caixaTexto" type="url" required="required"/> 
+</label> <!-- define um rótulo --> 
+
+<label> 
+Foto: <input type="file" required="required"/> 
+</label> <!-- define um rótulo -->
+
+<label> 
+Barra: <input type="range" required="required"/> 
+</label> <!-- define um rótulo -->  
+
+<label> 
+Senha: <input class="caixaTexto" type="password" required="required"/> 
+</label> <!-- define um rótulo --> 
+
+<label>
+Como nos conheceu:
+<!-- select: Cria uma lista de opções --> 
+    <select>
+    <!-- option: Opção da lista --> 
+        <option>Jornal</option>
+        <option>TV</option>
+        <option>Revista</option>
+        <option>Amigo</option>
+        <option>Internet</option>
+	</select>
+</label> 
+
+<label> 
+<!-- textarea: Caixa de texto de várias linhas --> 
+Mensagem: <textarea class="caixaTexto" cols="30" rows="7"></textarea> 
+</label> <!-- define um rótulo --> 
+
+<label> 
+<input type="submit" class="caixaTexto" value="Enviar dados" /> 
+</label> <!-- define um rótulo --> 
+
+
+
+</form>
+
+</body>
+</html>

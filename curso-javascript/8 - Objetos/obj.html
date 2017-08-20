@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- data-placement: right, para alinhar o tooltip, atributo de qualquer TAg html -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- 
+  Estruturas de controle de exceção 
+TRY, tenta executar a estrutura
+CATACH, caso contrário, caso de erro
+FINALLY: executa COM ou SEM ERRO, esse trecho 
+THROW: Em caso de erro especifico 
+WITH: cria um escopo para um trecho de código
+ele permite agregar um trecho, para que o mesmo
+seja contaneado em uma estrutura. 
+
+
+
+
+
+  -->
+  <script>
+  function verCarros()
+{
+
+var nome = "João";
+
+//window.alert(nome.length);
+
+//Operação realmente executada: 
+window.alert(new String(nome).length);
+
+
+}
+
+  </script>
+
+<!-- 
+
+Tipos primitivos
+
+Boolean, Number, String
+
+Objetos JS, todos os obj são arrays
+Os objetos tem atributos e funções que os diferenciam
+dos dados primitivos
+
+Objetos inerentes a tipo, são os que repetem
+Number, boolean, eles permitem atributos e funções
+
+Object    Function
+Boolean   Error
+Number    EvalError
+String    RangeRror
+Array     ReferenceError
+Data      SintaxeError
+Math      TypeError
+RegExp    URIError
+
+Pessoa //classe, grupo
+  .sexo, .profissao //atributos, dados
+    .dormir(), .comer(), .trabalhar() //métodos, ações, funções
+
+
+-->
+
+</head>
+<body>
+      
+    <h1>
+    <a href="#" onclick="verCarros();">Ver carros 
+    </a>
+    </h1>
+
+
+
+</body>
+</html>
